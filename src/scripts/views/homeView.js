@@ -22,8 +22,16 @@ const Header = React.createClass({
 	render: function(){
 		return (
 			<div id = 'header' onClick={this.handleHeaderClick}>
-				<h1><span className = 'HeaderTitle'></span></h1>
+				<h1> <span className = 'HeaderTitle'></span> </h1>
 			</div>
 		)
 	}
+})
+
+const SearchBar = React.createClass({
+	getInitialState: function(){
+		return {
+			suggestionState: []
+		}
+	},
 })
