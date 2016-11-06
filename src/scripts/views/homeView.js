@@ -13,3 +13,17 @@ const HomeView = React.createClass({
 			)
 	}
 })
+
+const Header = React.createClass({
+	handleHeaderClick: function(){
+		document.getElementById('artistSuggestions').style.visibility = 'hidden'
+	},
+
+	render: function(){
+		return (
+			<div id = 'header' onClick={this.handleHeaderClick}>
+				<h1><span className = 'HeaderTitle'></span></h1>
+			</div>
+		)
+	}
+})
