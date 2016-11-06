@@ -8,3 +8,11 @@ const SearchArtistCollection = Backbone.Collection.extend({
 		return rawJSONP.artists
 	}
 })
+
+const SerchArtistModel = Backbone.Model.extend({
+	url: 'https://api.spotify.com/v1/search/',
+	parse: function(rawJSONP){
+		return rawJSONP.artists
+	}
+})
+
