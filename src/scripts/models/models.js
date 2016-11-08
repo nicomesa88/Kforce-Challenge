@@ -23,13 +23,15 @@ const SuggestedAlbumsCollection = Backbone.Collection.extend({
 })
 
 const AlbumsModel = Backbone.Model.extend({
-	url: 'https://api.spotify.com/v1/albums',
-	parse: function(rawJSONP)
-})
-
-const SearchCollection = SearchArtistCollection.extend({
-	initialize.function(){
+	url: 'https://api.spotify.com/v1/albums/',
+	parse: function(rawJSONP){
+		return rawJSONP
 	}
 })
 
-export { SearchCollection, SearchArtistModel, SuggestedAlbumsCollection, AlbumsModel}
+const SearchCollection = SearchArtistCollection.extend({
+	initialize: function(){
+	}
+})
+
+export {SearchCollection, SearchArtistModel, SuggestedAlbumsCollection, AlbumsModel}

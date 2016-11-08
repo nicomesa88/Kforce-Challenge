@@ -1,10 +1,236 @@
+$spotifyGreen: #50CA40;
+
 * {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: gotham, sans-serif;
+	font-style: normal;
 	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
 }
 
-h1 {
-	font-size: 300px;
+body {
+		background: url('./images/tumblr_static_1rjj60zvl04k4c00sko8g844k.jpg') no-repeat center center fixed;
+}
+
+#wrapper {
+	background: rgba(0,0,0,.6);
+}
+
+#header {
+	display: block;
+	a {
+		font-size: 10vmin;
+		text-align: left;
+		text-decoration:none;
+		color: $spotifyGreen;
+		margin-left: 5%;
+	}
+}
+
+.album-detail-wrapper {
+	margin-top: 10em;
+}
+
+.album-info h2 {
+	color: sandybrown;
 	text-align: center;
-	color: fuchsia;
+	font-weight: 900
+}
+
+.album-container h2 {
+	width: 100%;
+	padding-left: .5em;
+	padding-right: .5em;
+	font-size: 3vmin;
+	text-align: center;
+	color: $spotifyGreen
+}
+
+.album-container img {
+	width: 100%;
+	padding: 1em;
+}
+
+.album-container {
+	width: 20%;
+	margin-bottom: 2em
+}
+
+.album-container:hover {
+	cursor: pointer;
+}
+
+.album-container img:hover {
+	box-shadow: inset 0 7em 10em -5em rgba(0,0,0,0.6),
+}
+
+#searchBarInputDiv {
+	background-color: rgba(0,0,0,.6);
+}
+#searchBar {
+	text-align: center;
+	background: white;
+}
+
+#searchBar input {
+	line-height: 1.5em;
+	background: white;
+	border-radius: 1em;
+	font-size: 3vmin;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	text-align: center;
+	width: 40vw;
+	margin-top: 3em;
+}
+
+#searchBar input:focus {
+	outline: none
+}
+
+#artistSuggestions {
+	background: rgba(0,0,0,.6);
+	width: 40vw;
+	margin: auto;
+	color: $spotifyGreen;
+	border-radius: 1em;
+	position: relative
+}
+
+#artistSuggestions div:hover {
+	cursor: pointer;
+	background-color: rgba(0,0,0,.6);
+}
+
+#searchBarInputDiv {
+	height: 3.5em;
+	background: url('./images/tumblr_static_1rjj60zvl04k4c00sko8g844k.jpg') no-repeat center center fixed;
+}
+
+input:focus::-webkit-input-placeholder {
+	color: transparent
+}
+
+input:focus:-moz-placeholder {
+	color: transparent
+}
+
+input:focus::-moz-placeholder {
+	color: transparent
+}
+
+input:focus:-ms-input-placeholder {
+	color: transparent
+}
+
+.album-list-wrapper {
+	margin-top: 10em;
+}
+
+.album-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 90%;
+	margin: auto;
+}
+
+.suggested-albums-header {
+	color: white;
+	width: 90%;
+	margin: auto;
+	letter-spacing: .2em;
+	text-align: center;
+	background: rgba(0,0,0,.6);
+	width: 90%;
+	margin-left: 5%;
+}
+
+.album-cover {
+	width: 50%;
+}
+
+.album-cover img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.album-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	width: 90%;
+	margin: auto;
+}
+
+.album-info-header h1 {
+	font-size: 3vmin;
+	color: white;
+	margin-bottom: 0;
+	text-align: center;
+	background: rgba(0,0,0,.6);
+	width: 90%;
+	margin-left: 5%;
+}
+
+.album-info-header h2 {
+	font-size: 3vmin;
+	color: sandybrown;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	background: rgba(0,0,0,.6);
+	width: 90%;
+	margin-left: 5%;
+}
+
+.album-info-header h3 {
+	font-size: 2vmin;
+	color: white;
+	text-align: center;
+	background: rgba(0,0,0,.6);
+	width: 90%;
+	margin-left: 5%;
+}
+
+.track-list {
+	overflow-y: scroll;
+	width: 55%;
+	background-color: rgba(0,0,0,.6);
+	padding-left: 1%;
+	padding-right: 5%;
+}
+
+.track-list-header {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 2%;
+	padding-right: 2%;
+	color: white;
+	font-weight: bolder;
+	border-bottom: 1px solid whitesmoke;
+}
+
+.track-info {
+	display: flex;
+	justify-content: space-between;
+	margin: 1vw;
+}
+
+.track-duration {
+	color: sandybrown;
+}
+
+.track-name {
+	color: white;
+}
+
+.track-list::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	outline: 1px solid slategrey;
+}
+
+.track-list::-webkit-scrollbar {
+	background-color: snow;
 }
